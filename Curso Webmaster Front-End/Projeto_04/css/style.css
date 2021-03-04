@@ -74,9 +74,7 @@ header ul a {
     padding-top: 100%;
     background-color: #ccc;
     border: 5px solid white;
-    /*
-	background-image:url('');
-	*/
+    background-image: url('');
 }
 
 
