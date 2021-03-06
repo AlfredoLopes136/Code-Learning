@@ -15,11 +15,9 @@
     margin: 0 auto;
 }
 
-html,
-body {
+html, body {
     height: 100%;
 }
-
 
 /**Header do site**/
 
@@ -38,7 +36,7 @@ nav.menu-mobile {
     height: 28px;
     margin-top: 7px;
     cursor: pointer;
-    background-image: url(../img/menu-mobile.png);
+    background-image: url('../imagens/menu-mobile.png');
     background-size: 100% 100%;
     display: none;
 }
@@ -83,9 +81,7 @@ header ul a {
     text-decoration: none;
 }
 
-
 /*****/
-
 
 /**MOSAICO**/
 
@@ -99,9 +95,10 @@ header ul a {
     padding-top: 100%;
     background-color: #ccc;
     border: 5px solid white;
-    background-image: url('');
+    /*
+	background-image:url('');
+	*/
 }
-
 
 /****/
 
@@ -115,7 +112,7 @@ section.servicos>.container {
 }
 
 section.servicos>.container .box-servico {
-    background-image: url('../img/icone_dente.png');
+    background-image: url('../imagens/icone_dente.png');
     background-size: 18px 18px;
     background-position: center calc(100% - 10px);
     background-repeat: no-repeat;
@@ -180,7 +177,7 @@ section.perfil-container .perfil-wraper2 {
 section.perfil-container .img-perfil {
     width: 40%;
     height: 100%;
-    background-image: url('../img/img_perfil.png');
+    background-image: url('../imagens/img_perfil.png');
     background-size: 100% 100%;
 }
 
@@ -208,17 +205,51 @@ section.videos .box-video {
     float: left;
     width: 33.3%;
     position: relative;
+    border: 5px solid white;
     /*background-color: green;*/
     padding-top: calc(33.3% * 0.6);
-    border: 5px solid white;
 }
 
 section.videos iframe {
     position: absolute;
-    float: 0;
+    left: 0;
     top: 0;
     width: 100%;
     height: 100%;
+}
+
+section.tratamentos {
+    padding: 70px 0;
+}
+
+section.tratamentos .tratamento-container {
+    float: left;
+    width: 33.3%;
+}
+
+section.tratamentos>h2 {
+    color: #698293;
+    text-align: center;
+    font-size: 18px;
+}
+
+section.tratamentos>.container {
+    padding: 80px 0;
+}
+
+.tratamento-single {
+    padding: 20px;
+}
+
+.tratamento-single h2 {
+    font-size: 18px;
+    color: #737373;
+}
+
+.tratamento-single p {
+    padding: 10px 0;
+    font-size: 13px;
+    color: #b4b4b4;
 }
 
 @media screen and (max-width: 768px) {
@@ -242,17 +273,17 @@ section.videos iframe {
     section.servicos>.container .box-servico:nth-of-type(1) {
         width: 90%;
         max-width: 350px;
-        padding: 30px 2%;
+        padding: 40px 2%;
     }
     section.servicos>.container .box-servico:nth-of-type(2) {
         width: 94%;
         max-width: 380px;
-        padding: 40px 2%;
+        padding: 50px 2%;
     }
     section.servicos>.container .box-servico:nth-of-type(3) {
         width: 90%;
         max-width: 350px;
-        padding: 30px 2%;
+        padding: 40px 2%;
     }
     section.perfil-container .perfil-wraper {
         padding-top: 0;
@@ -279,7 +310,7 @@ section.videos iframe {
         display: inline-block;
         height: auto;
         /*
-		background-image: url('../img/img_perfil.png');
+		background-image: url('../imagens/img_perfil.png');
 		background-size: 100% 100%;
 		*/
     }
@@ -289,18 +320,16 @@ section.videos iframe {
         width: 100%;
         padding: 0 30px;
     }
-    section.videos .box-video {
-        width: 33.3%;
-        border: 5px solid white;
-        /*background-color: green;*/
-        padding-top: calc(33.3% * 0.6);
+    section.videos {
+        text-align: center;
     }
-    section.videos iframe {
-        position: absolute;
-        float: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
+    section.videos .box-video {
+        float: none;
+        width: 70%;
+        display: inline-block;
+        /*border:5px solid white;*/
+        /*background-color: green;*/
+        padding-top: calc(70% * 0.6);
     }
 }
 
@@ -308,6 +337,12 @@ section.videos iframe {
     section.perfil-container .img-perfil {
         width: 80%;
         padding-top: 110%;
+    }
+    section.videos .box-video {
+        width: 100%;
+        /*border:5px solid white;*/
+        /*background-color: green;*/
+        padding-top: calc(100% * 0.6);
     }
 }
 
